@@ -20,6 +20,6 @@ from UrbanDjango.task2 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.class_t),
-    path('', views.func_t)
+    path('usingfunc', views.class_t),
+    path('/usingclass', views.FuncTemplate.as_view())
 ]
