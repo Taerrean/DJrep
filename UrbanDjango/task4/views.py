@@ -13,7 +13,7 @@ def platform(request):
     context = {
         'Title': title,
     }
-    return render(request, 'platform.html', context)
+    return render(request, 'fourth_task/platform.html', context)
 
 
 def games(request):
@@ -25,7 +25,7 @@ def games(request):
         'games': games,
         'buy': buy,
     }
-    return render(request, 'games.html', context)
+    return render(request, 'fourth_task/games.html', context)
 
 
 def cart(request):
@@ -41,4 +41,4 @@ def cart(request):
         'text_2': text_2,
         'text_3': text_3,
     }
-    return render(request, 'cart.html', context)
+    return render(request, 'fourth_task/cart.html', context)

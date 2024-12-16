@@ -46,7 +46,7 @@ def sign_up_by_html(request):
             return HttpResponse(f'Приветствуем, {username}!')
 
     context = {'info': info}
-    return render(request, 'registration_page.html', context)
+    return render(request, 'fifth_task/registration_page.html', context)
 
 
 def sign_up_by_django(request):
@@ -82,4 +82,4 @@ def sign_up_by_django(request):
                 return HttpResponse(f'Приветствуем, {username}!')
     else:
         form = UserRegister()
-        return render(request, 'registration_page.html', {'form': form})
+        return render(request, 'fifth_task/registration_page.html', {'form': form})

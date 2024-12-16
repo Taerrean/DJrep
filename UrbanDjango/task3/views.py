@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 
 def platform(request):
-    return render(request, 'platform.html')
+    return render(request, 'third_task/platform.html')
 
 
 def games(request):
@@ -20,7 +20,7 @@ def games(request):
         'game_3': game_3,
         'buy': buy,
     }
-    return render(request, 'games.html', context)
+    return render(request, 'third_task/games.html', context)
 
 
 def cart(request):
@@ -36,4 +36,4 @@ def cart(request):
         'text_2': text_2,
         'text_3': text_3,
     }
-    return render(request, 'cart.html', context)
+    return render(request, 'third_task/cart.html', context)
